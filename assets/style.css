@@ -1,6 +1,6 @@
 :root {
-    --theme-colour: rgb(199, 65, 110);
-    --accent-colour: rgb(247, 247, 7);
+    --theme-colour: #D80073;
+    --accent-colour: #DAE8FC;
 }
 
 .body {
@@ -8,25 +8,35 @@
 }
 
 .nav {
-    padding: 10px, 10px, 20px, 20px;
     margin: 10px, 10px, 10px, 10px;
     border: 60px, 60px, 20px, 20px;
-    background-color: var(--accent-colour);
+    background-color: var(--theme-colour);
     display: block;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+.h1bcg {
+    background-color: #DAE8FC;
+    width: 10px;
+    height: 20px;
+    text-align: right;  
+      
 }
 
 .h1 {
+    width: 300px;
+    height: 50px;
+    background-color: var(--accent-colour);
     font-family: cursive;
     font-style: oblique;
-    font-size: large;
-    font-size: 40px;
-    text-align: center;
-    padding-bottom: 40px;
-    padding-top: 40px;
-
+    font-size: 30px;
+    padding: 10px 20px;
+    
 }
 
 .ul {
@@ -34,12 +44,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: px;
-    background-color: black;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    color: var(--accent-colour);
     text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-colour);
+    text-decoration-thickness: 3px;
+    padding-left: 50%;
+    padding-bottom: 2%;
+}
+
+img {
+    width: 100%;
+    height: 320px;
+    object-fit:cover
+
 }
 
 .boxes {
@@ -47,7 +65,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+
 }
 
 .box1 {
@@ -80,25 +98,26 @@
 
 @media screen and (min-width: 1056px) {
     #allcategories {
-        display: flex ;
+        display: flex;
         flex-direction: row;
-        justify-content: flex-start;	
-        
+        justify-content: flex-start;
+
     }
+
     #categorycards {
         width: 75%;
         box-sizing: border-box;
-        border: 0px;color: blu;
+        border: 0px;
+        color: blu;
         border-style: solid;
     }
+
     #asidecards {
-        
-            width: 25%;
-            float: right;
-            font-style: italic;
-            background-color: lightgray;
-          
+
+        width: 25%;
+        float: right;
+        font-style: italic;
+        background-color: lightgray;
+
     }
 }
-
-
