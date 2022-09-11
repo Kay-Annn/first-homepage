@@ -52,14 +52,14 @@
     padding-bottom: 2%;
 }
 
-img {
+.box0 {
+    position: relative;
+}
+
+.heroimg {
     width: 100%;
     height: 320px;
     object-fit: cover
-}
-
-.box0 {
-    position: relative;
 }
 
 .h3tag {
@@ -73,24 +73,27 @@ img {
     font-size: 20px;
 }
 
-.aboutme, .work {
+.aboutme,
+.work,
+.contactme {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
 }
 
-.aboutmeheading, .workheading {
+.aboutmeheading,
+.workheading, .contactmeheading{
     font-size: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 20%;
     justify-content: flex-end;
-    margin-right: 4%;
+    margin-right: 2%;
 }
 
-.verticalline{
+.verticalline {
     border-left: 6px solid var(--accent-colour);
     height: 300px;
     margin-left: 10%;
@@ -106,30 +109,101 @@ img {
     line-height: 1.5;
 }
 
+.imgsection {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: flex-start;
+    line-height: 1.5;
+}
+
+.verticallinework {
+    border-left: 6px solid var(--accent-colour);
+    height: 965px;
+    margin-left: 10%;
+}
+
+.mainworkimage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+.additionalimgs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.vrsnimgupdate {
+    width: 100%;
+    height: 500px;
+    border: solid;
+    color: var(--accent-colour);
+}
 
 
+.imgalgnmt {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.test {
+    width: 49.5%;
+    position: relative;
+}
+
+.addtlimgspecs {
+    width: 100%;
+    height: 220px;
+    border: solid;
+    color: var(--accent-colour);
+}
+
+.htmlcsstag {
+    position: absolute;
+    background-color: #DAE8FC;
+    bottom: 20px;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.verticallinecontact {
+    border-left: 6px solid var(--accent-colour);
+    height: 90px;
+    margin-left: 10%;
+}
+
+.contactmemenu {
+    width: 70%;
+    font-size: 150%;
+    text-decoration: underline;
+    text-decoration-color: black;
+    justify-content: space-between;
+    margin-top: 3%;
+    }
+
+    .contactitems{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       }
 
 @media screen and (min-width: 1056px) {
     #allcategories {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-
-    }
-
-    #categorycards {
-        width: 75%;
-        box-sizing: border-box;
-        border: 0px;
-        color: blu;
-        border-style: solid;
-    }
-
-    #asidecards {
-        width: 25%;
-        float: right;
-        font-style: italic;
-        background-color: lightgray;
-
     }
 }
