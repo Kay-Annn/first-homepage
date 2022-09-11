@@ -83,7 +83,8 @@
 }
 
 .aboutmeheading,
-.workheading, .contactmeheading{
+.workheading,
+.contactmeheading {
     font-size: 50px;
     display: flex;
     flex-direction: row;
@@ -191,14 +192,24 @@
     text-decoration-color: black;
     justify-content: space-between;
     margin-top: 3%;
-    }
+}
 
-    .contactitems{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-       }
+.contactitems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer {
+    font-size: 20px;
+    margin-top: 2%;
+    height: 100px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 40px;
+    background-color: var(--theme-colour);
+}
 
 @media screen and (min-width: 1056px) {
     #allcategories {
