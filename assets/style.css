@@ -89,6 +89,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     width: 20%;
     justify-content: flex-end;
     margin-right: 2%;
@@ -131,41 +132,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    position: relative;
     margin-bottom: 1%;
-}
-
-.additionalimgs {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-
+    background-color: ;
 }
 
 .vrsnimgupdate {
+    position: relative;
     width: 100%;
     height: 500px;
-    border: solid;
-    color: var(--accent-colour);
-}
-
-
-.imgalgnmt {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-
-}
-
-.test {
-    width: 49.5%;
-    position: relative;
-}
-
-.addtlimgspecs {
-    width: 100%;
-    height: 220px;
     border: solid;
     color: var(--accent-colour);
 }
@@ -179,6 +153,35 @@
     font-size: 20px;
 }
 
+.additionalimgs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.imgalgnmt {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.test {
+    width: 49.5%;
+}
+
+.addtlimgspecs {
+    width: 100%;
+    height: 220px;
+    border: solid;
+    color: var(--accent-colour);
+}
+
+
+
 .verticallinecontact {
     border-left: 6px solid var(--accent-colour);
     height: 90px;
@@ -187,11 +190,12 @@
 
 .contactmemenu {
     width: 70%;
-    font-size: 150%;
+    font-size: 24px;
     text-decoration: underline;
     text-decoration-color: black;
     justify-content: space-between;
     margin-top: 3%;
+
 }
 
 .contactitems {
@@ -211,10 +215,257 @@
     background-color: var(--theme-colour);
 }
 
-@media screen and (min-width: 1056px) {
-    #allcategories {
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+    .h1bcg {
+        width: 0px;
+        height: 60px;
+        text-align: right;
+    }
+
+    .h1 {
+        width: 230px;
+        font-size: 22px;
+        height: 40px;
+    }
+
+    .ul {
+        padding-left: 0%;
+    }
+
+    .nav {
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+
+    .heroimg {
+        height: 200px;
+    }
+
+    .h3tag {
+        font-size: 12px;
+    }
+
+    .aboutme,
+    .work,
+    .contactme {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutmeheading,
+    .workheading,
+    .contactmeheading {
+        font-size: 20px;
+        text-decoration: underline;
+        justify-content: center;
+    }
+
+    .verticalline,
+    .verticallinework,
+    .verticallinecontact {
+        display: none;
+    }
+
+    .aboutmetext {
+        font-size: 15px;
+        margin: 8%;
+    }
+
+    .imgsection {
+        width: 96%;
+        margin: 4%;
+    }
+
+    .vrsnimgupdate {
+        height: 180px;
+    }
+
+    .htmlcsstag {
+        font-size: 12px;
+    }
+
+    .imgalgnmt {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+    }
+
+    .contactmemenu {
+        width: 95%;
+        font-size: 11px;
+    }
+
+    .footer {
+        height: 80%;
+        font-size: 16px;
+    }
+}
+
+/* Small devices (large phones and portrait tablets, 601px and up) */
+@media screen and (max-width: 768px) {
+    .h1bcg {
+        width: 0px;
+        height: 60px;
+        text-align: right;
+    }
+
+    .h1 {
+        width: 230px;
+        font-size: 22px;
+        height: 40px;
+    }
+
+    .ul {
+        padding-left: 0%;
+    }
+
+    .nav {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .heroimg {
+        height: 200px;
+    }
+
+    .h3tag {
+        font-size: 12px;
+    }
+
+    .aboutme,
+    .work,
+    .contactme {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutmeheading,
+    .workheading,
+    .contactmeheading {
+        font-size: 30px;
+        text-decoration: underline;
+        justify-content: center;
+    }
+
+    .verticalline,
+    .verticallinework,
+    .verticallinecontact {
+        display: none;
+    }
+
+    .aboutmetext {
+        font-size: 15px;
+        margin: 8%;
+    }
+
+    .imgsection {
+        width: 96%;
+        margin: 4%;
+    }
+
+    .vrsnimgupdate {
+        height: 300px;
+    }
+
+    .htmlcsstag {
+        font-size: 15px;
+    }
+
+    .imgalgnmt {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .contactmemenu {
+        width: 95%;
+        font-size: 11px;
+    }
+
+    .footer {
+        height: 80%;
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 1200px) {
+    .h1bcg {
+        text-align: right;
+    }
+
+    .h1 {
+        width: 280px;
+        font-size: 26px;
+
+    }
+
+    .nav {
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+    .heroimg {
+        height: 200px;
+    }
+
+    .h3tag {
+        font-size: 14px;
+    }
+
+    .aboutme,
+    .work,
+    .contactme {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutmeheading,
+    .workheading,
+    .contactmeheading {
+        font-size: 30px;
+        text-decoration: underline;
+        justify-content: center;
+    }
+
+    .verticalline,
+    .verticallinework,
+    .verticallinecontact {
+        display: none;
+    }
+
+    .aboutmetext {
+        font-size: 15px;
+        margin: 2%;
+    }
+
+    .imgsection {
+        width: 96%;
+        margin: 4%;
+    }
+
+    .vrsnimgupdate {
+        height: 450px;
+    }
+
+    .htmlcsstag {
+        font-size: 15px;
+    }
+
+    .imgalgnmt {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .contactmemenu {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .footer {
+        height: 80%;
+        font-size: 18px;
     }
 }
