@@ -19,7 +19,7 @@
     padding-bottom: 2px;
     padding-left: 1%;
 }
-
+/* class to control propertities containing my name*/
 .h1bcg {
     background-color: #DAE8FC;
     width: 10px;
@@ -51,6 +51,9 @@
     padding-left: 50%;
     padding-bottom: 2%;
 }
+a {
+color: rgb(83, 64, 64);
+}
 
 .box0 {
     position: relative;
@@ -60,6 +63,29 @@
     width: 100%;
     height: 320px;
     object-fit: cover
+}
+
+.avatarcontainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 55%;
+    position: absolute;
+    padding: 10px;
+    margin: 1%;
+    right: 40px;
+    }
+
+.avatar{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.avatar:hover{
+width: 120px;
+height: 120px;
 }
 
 .h3tag {
@@ -72,7 +98,7 @@
     margin: 1%;
     font-size: 20px;
 }
-
+/* Grouped elements with similar properties*/
 .aboutme,
 .work,
 .contactme {
@@ -82,6 +108,7 @@
     margin-top: 20px;
 }
 
+/* Grouped elements with similar properties*/
 .aboutmeheading,
 .workheading,
 .contactmeheading {
@@ -94,7 +121,7 @@
     justify-content: flex-end;
     margin-right: 2%;
 }
-
+/*created class for divider between heading and content*/
 .verticalline {
     border-left: 6px solid var(--accent-colour);
     height: 300px;
@@ -120,7 +147,7 @@
     justify-content: flex-start;
     line-height: 1.5;
 }
-
+/*created class for divider between heading and content*/
 .verticallinework {
     border-left: 6px solid var(--accent-colour);
     height: 965px;
@@ -135,13 +162,16 @@
     margin-bottom: 1%;
     background-color: ;
 }
-
 .vrsnimgupdate {
     position: relative;
     width: 100%;
     height: 500px;
     border: solid;
     color: var(--accent-colour);
+}
+.vrsnimgupdate:hover{
+    height: 600px;
+    width: 105%;
 }
 
 .htmlcsstag {
@@ -180,8 +210,7 @@
     color: var(--accent-colour);
 }
 
-
-
+/*created class for divider between heading and content*/
 .verticallinecontact {
     border-left: 6px solid var(--accent-colour);
     height: 90px;
@@ -192,10 +221,8 @@
     width: 70%;
     font-size: 24px;
     text-decoration: underline;
-    text-decoration-color: black;
-    justify-content: space-between;
+    Justify-content: space-between;
     margin-top: 3%;
-
 }
 
 .contactitems {
@@ -203,7 +230,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+   
 }
+
+
 
 .footer {
     font-size: 20px;
@@ -241,6 +271,23 @@
 
     .heroimg {
         height: 200px;
+    }
+
+    .avatarcontainer {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 60%;
+        position: absolute;
+        padding: 10px;
+        font-size: 20px;
+        right: 40%;
+    
+    }
+
+    .avatar {
+        vertical-align: middle;
+        border-radius: 50%;
     }
 
     .h3tag {
@@ -302,8 +349,8 @@
     }
 }
 
-/* Small devices (large phones and portrait tablets, 601px and up) */
-@media screen and (max-width: 768px) {
+/* Small devices (large phones and portrait tablets, 601px to 768px) */
+@media screen and (max-width: 1069px) {
     .h1bcg {
         width: 0px;
         height: 60px;
@@ -327,6 +374,24 @@
 
     .heroimg {
         height: 200px;
+    }
+
+    .avatarcontainer {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 60%;
+        position: absolute;
+        padding: 10px;
+        margin: 1%;
+        font-size: 20px;
+    }
+
+    .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
     }
 
     .h3tag {
@@ -386,86 +451,5 @@
     .footer {
         height: 80%;
         font-size: 16px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (max-width: 1200px) {
-    .h1bcg {
-        text-align: right;
-    }
-
-    .h1 {
-        width: 280px;
-        font-size: 26px;
-
-    }
-
-    .nav {
-        font-size: 14px;
-        padding-bottom: 5px;
-    }
-
-    .heroimg {
-        height: 200px;
-    }
-
-    .h3tag {
-        font-size: 14px;
-    }
-
-    .aboutme,
-    .work,
-    .contactme {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aboutmeheading,
-    .workheading,
-    .contactmeheading {
-        font-size: 30px;
-        text-decoration: underline;
-        justify-content: center;
-    }
-
-    .verticalline,
-    .verticallinework,
-    .verticallinecontact {
-        display: none;
-    }
-
-    .aboutmetext {
-        font-size: 15px;
-        margin: 2%;
-    }
-
-    .imgsection {
-        width: 96%;
-        margin: 4%;
-    }
-
-    .vrsnimgupdate {
-        height: 450px;
-    }
-
-    .htmlcsstag {
-        font-size: 15px;
-    }
-
-    .imgalgnmt {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .contactmemenu {
-        width: 95%;
-        font-size: 14px;
-    }
-
-    .footer {
-        height: 80%;
-        font-size: 18px;
     }
 }

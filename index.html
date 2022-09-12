@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
-    <title>My Awesome Portfolio</title>
+    <title>Kay-Ann Williams' Portfolio</title>
 
 </head>
 
-<body class="body">
+<body id="mainbody" class="body">
     <header>
         <nav class="nav">
 
@@ -20,14 +20,12 @@
                     <h1 class="h1">Kay-Ann Williams </h1>
                 </div>
                 <div>
+                    <!--Linked menu items to appropriate sections-->
                     <ul class="ul">
-                        <li>
-                            Home
-                        </li>
-                        <li>About Me</li>
-                        <li>Work
-                        </li>
-                        <li>Contact Me</li>
+                        <a href="#mainbody">Home</a>
+                        <a href="#aboutmesection">About Me</a>
+                        <a href="#worksection">Work</a>
+                        <a href="#contactmesection">Contact Me</a>
                     </ul>
                 </div>
             </div>
@@ -38,16 +36,18 @@
 
             <div class="box0">
                 <div>
-                    <img class="heroimg" src="./assets/headerbackground_first_homepage.jpg" alt="header background" />
+                    <img class="heroimg" src="./assets/headerbackground_first_homepage.jpg" alt="header background, pink to the left and blue on the right with three cubes" />
                 </div>
-
+                <div class="avatarcontainer">
+                    <img class="avatar" src="./assets/gradpic.jpg" alt="profile picture of a smiling girl in black graduation cap and black gown with red and white trim">
+                </div>
                 <div class="h3tag">
                     <h3>Showcasing my Skills!</h3>
                 </div>
             </div>
         </div>
     </div>
-    <section class="aboutme">
+    <section id="aboutmesection" class="aboutme">
         <div class="aboutmeheading">
             <div>
                 <h3>About <br> Me</h3>
@@ -55,16 +55,16 @@
             <div class="verticalline"></div>
         </div>
         <div class="aboutmetext">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem architecto eos obcaecati est minus
-                voluptates quasi repellendus corrupti, vel impedit, illo nostrum iusto debitis magni commodi velit
-                ratione iure.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem architecto eos obcaecati est minus
-                voluptates quasi repellendus corrupti, vel impedit, illo nostrum iusto debitis magni commodi velit
-                ratione iure.</p>
+            <p>Hi and welcome to my portoflio. I am excited to say this is the first official webpage I have built and I just began my coding journey August 22 2022.
+                I decided to pursue computer programing because I have always been curious about the world wide web and how applications work. Also,I have this strong 
+                belief that eventually everyone will have to start learning how to program applications. 
+    
+            </p>
+            <p>In the next 6 months I aspire to be well on my way to becoming a top class developer with skills that are marketable and fresh. I hope you enjoy some, if not all of my projects and I look forward to and welcome collaberations. </p>
         </div>
     </section>
 
-    <section class="work">
+    <section id="worksection" class="work">
         <div class="workheading">
             <div>
                 <h3>Work</h3>
@@ -76,31 +76,33 @@
 
             <div class="mainworkimage">
                 <div class="imgalgnmt">
-                    <img class="vrsnimgupdate" src="./assets/laptopwithupdate.jpg" alt="">
+                    <!--Added alt text to images and link to deployed page-->
+                    <img class="vrsnimgupdate" src="./assets/laptopwithupdate.jpg" alt="phone on table to the left of a laptop with v 1.4 wordpress theme update on screen">
                     <div class="htmlcsstag">
                         <h3>Cool Website</h3>
                         <h5>HTML/CSS</h5>
                     </div>
                 </div>
             </div>
-
             <div class="additionalimgs">
                 <div class="imgalgnmt">
                     <div class="test">
-                        <img class="addtlimgspecs" src="./assets/covidtracker.jpg" alt="">
+                        <!--Added alt text to images and link to deployed page-->
+                        <a href="https://kay-annn.github.io/challenge-code-refactor/"><img class="addtlimgspecs" src="./assets/covidtracker.jpg" alt="screen with words covid tracker and charts showing graphs"></a>
                         <div>
                             <div class="htmlcsstag">
-                                <h3>Cool Website</h3>
+                                <h3>Portfolio </h3>
                                 <h5>HTML/CSS</h5>
                             </div>
                         </div>
                     </div>
 
                     <div class="test">
-                        <img class="addtlimgspecs" src="./assets/ecommercewebapp.jpg" alt="">
+                        <!--Added alt text to images and link to deployed page-->
+                        <a href="https://kay-annn.github.io/challenge-code-refactor/"><img class="addtlimgspecs" src="./assets/ecommercewebapp.jpg" alt="Hand with red nail polish holding card and opened laptop on shopping website"></a>
                         <div>
                             <div class="htmlcsstag">
-                                <h3>Cool Website</h3>
+                                <h3>Shopping App</h3>
                                 <h5>HTML/CSS</h5>
                             </div>
                         </div>
@@ -111,20 +113,22 @@
             <div class="additionalimgs">
                 <div class="imgalgnmt">
                     <div class="test">
-                        <img class="addtlimgspecs" src="./assets/laptopwithcode.jpg" alt="">
+                        
+     <!--Added alt text to image-->
+    <a href="https://kay-annn.github.io/challenge-code-refactor/"><img class="addtlimgspecs" src="./assets/laptopwithcode.jpg" alt="screen with computer programing language"></a>
                         <div>
                             <div class="htmlcsstag">
-                                <h3>Cool Website</h3>
-                                <h5>HTML/CSS</h5>
+                                <h3>Food App</h3>
+                                <h5>React Native</h5>
                             </div>
                         </div>
                     </div>
                     <div class="test">
-                        <img class="addtlimgspecs" src="./assets/laptopwithcode2.jpg" alt="">
+                        <a href="https://kay-annn.github.io/challenge-code-refactor/"><img class="addtlimgspecs" src="./assets/laptopwithcode2.jpg" alt=""></a>
                         <div>
                             <div class="htmlcsstag">
-                                <h3>Cool Website</h3>
-                                <h5>HTML/CSS</h5>
+                                <h3>Calculator</h3>
+                                <h5>Python</h5>
                             </div>
                         </div>
                     </div>
@@ -133,7 +137,7 @@
         </div>
     </section>
 
-    <section class="contactme">
+    <section id="contactmesection" class="contactme">
         <div class="contactmeheading">
             <div>
                 <h3>Contact <br> Me</h3>
@@ -142,19 +146,19 @@
 
             </div>
         </div>
-        <div class="contactmemenu">
-            <ul class="contactitems">
+        <div id="special" class="contactmemenu">
+            <ul id="special" class="contactitems">
 
-                <li>
+                <a href="">
                     1-888-888-8888
-                </li>
+                </a>
 
-                <li>myemail@email.com</li>
+                <a href="">myemail@email.com</a>
 
-                <li>GitHub
-                </li>
+                <a href="">GitHub
+                </a>
 
-                <li>Blog</li>
+                <a href="">Blog</a>
             </ul>
         </div>
     </section>
