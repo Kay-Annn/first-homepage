@@ -23,6 +23,9 @@ I have learned how to effectively used media queries.
 
 **![Attached is a screenshot of the page viewed at 280px](./Images/mediaqueryscreenat280.png)**
 
+## Please access website using the link below:
+https://kay-annn.github.io/first-homepage/
+
 ## Licence
 I used the MIT licence, please refer to licence in repository. 
 
